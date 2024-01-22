@@ -22,6 +22,7 @@ public class StudentController {
     public Student saveStudent(@RequestBody Student student){
         logger.info("Saving a new student");
         Student student1 = studentRepository.save(student);
+		//Tested
         return student1;
     }
 
