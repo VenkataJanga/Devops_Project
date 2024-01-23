@@ -2,6 +2,6 @@ package com.docker.autotest.springbootdockertest.controller;
 
 public class TestController {
 	
-	private String test="Hello DevOps Team";
+	private String test="Welcome DTAG";
 
 }
