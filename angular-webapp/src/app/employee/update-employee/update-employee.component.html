@@ -1,0 +1,33 @@
+<h3>
+    Update Employee
+  </h3>
+    <form (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" [(ngModel)]="employee.name" name="name">
+  
+  </div>
+  <div class="form-group">
+    <label for="name">EmpId</label>
+    <input type="text" class="form-control" id="empId" [(ngModel)]="employee.empId" name="empId">
+  
+  </div>
+  <div class="form-group">
+    <label for="name">Email</label>
+    <input type="text" class="form-control" id="email" [(ngModel)]="employee.email" name="email">
+  
+  </div>
+  <div class="form-group">
+    <label for="name">Phone</label>
+    <input type="text" class="form-control" id="phone" [(ngModel)]="employee.phone" name="phone">
+  
+  </div>
+  <div class="form-group">
+    <label for="name">Role</label>
+    <input type="text" class="form-control" id="role" [(ngModel)]="employee.role" name="role">
+  </div>
+  <button style='margin-right:16px' class="btn btn-success">Submit</button>
+  <button style='margin-right:16px' (click)="list()" class="btn btn-success">Back to Employees</button>
+  
+  </form>
+  

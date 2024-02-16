@@ -1,0 +1,39 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Employee List</h2>
+    </div>
+    <div class="panel-body">
+      <table id ="datatable-example" class="display" cellspacing="0" width="100%">
+
+        <thead>
+          <tr>
+            <th >Name</th>
+            <th >EmpId</th>
+            <th >Role</th>
+            <th >Email</th>
+            <th >Phone</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--<tr *ngFor="let employee of employees | async"> -->
+          <tr *ngFor="let employee of employees">
+            <td>{{employee.name}}</td>
+            <td>{{employee.empId}}</td>
+            <td>{{employee.role}}</td>
+            <td>{{employee.email}}</td>
+            <td>{{employee.phone}}</td>
+            
+              <td><button  (click)="deleteEmployee(employee.id)"  class="btn btn-danger">Delete</button>
+                <button  (click)="updateEmployee(employee.id)" class="btn btn-success" style="margin-left: 10px">Edit details</button>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+    
+    
