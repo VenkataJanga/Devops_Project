@@ -1,9 +1,9 @@
-package com.example.angular.springbootcruddemo.repository;
+package com.example.springbootcruddemo.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.example.angular.springbootcruddemo.model.Employee;
+import com.example.springbootcruddemo.model.Employee;
 
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee,Integer> {
